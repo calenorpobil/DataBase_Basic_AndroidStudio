@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DataBase_Basic</string>
+    <string name="val">Value</string>
+    <string name="nreg">Número de registro</string>
+    <string name="ins">Insert</string>
+    <string name="act">Actualizar</string>
+    <string name="elim">Eliminar</string>
+    <string name="cons">Consultar</string>
+</resources>
