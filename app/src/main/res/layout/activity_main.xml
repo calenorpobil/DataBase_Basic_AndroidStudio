@@ -26,7 +26,7 @@
             android:text="@string/nreg" />
 
         <EditText
-            android:id="@+id/txtReg"
+            android:id="@+id/etCodigo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="5"
@@ -43,7 +43,7 @@
             android:text="@string/val" />
 
         <EditText
-            android:id="@+id/txtVal"
+            android:id="@+id/etNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -53,6 +53,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -66,24 +67,28 @@
             android:id="@+id/btnInsertar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="btInsertar"
             android:text="@string/ins" />
 
         <Button
             android:id="@+id/btnActualizar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="btActualizar"
             android:text="@string/act" />
 
         <Button
             android:id="@+id/btnEliminar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="btEliminar"
             android:text="@string/elim" />
 
         <Button
             android:id="@+id/btnConsultar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="btConsultar"
             android:text="@string/cons" />
 
     </LinearLayout>
@@ -93,4 +98,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="" />
+
+    <TextView
+        android:id="@+id/tvResultados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
